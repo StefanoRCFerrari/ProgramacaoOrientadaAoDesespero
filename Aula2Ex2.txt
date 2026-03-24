@@ -1,0 +1,29 @@
+package estudosp1;
+//A2Ex2
+import java.util.Scanner;
+
+public class EstudosP1 {
+
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        String frase;
+        int contador, tamanho, palavras = 1;
+        
+        System.out.println("Digite uma frase: ");
+        frase = scanner.nextLine();
+        tamanho = frase.length();
+        if (!frase.isEmpty())
+            for (contador = 0; contador < tamanho; contador++){
+                if (frase.charAt(contador) == ' ')
+                    palavras++;
+            }
+        
+        if (!frase.isEmpty())
+            System.out.println("Número de palavras: " + palavras);
+    }
+    
+    
+    
+}

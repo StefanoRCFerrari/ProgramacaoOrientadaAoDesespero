@@ -1,0 +1,53 @@
+class Pato
+	def falar(self):
+		print("Quack")
+
+	def nadar(self):
+		print("Pato nadando")
+
+Class Donald(Pato):
+	pass 
+
+Class Patinho_feio:
+	def falar(self):
+		print("Quack Feio")
+
+	def nadar(self):
+		print("Não é pato nadando")
+
+Class Pluto:
+	def latir(self):
+		print("Au au")
+	
+def mostrarPato(p):
+	p.falar()
+	p.nadar()
+
+//def mostrarPato(p):
+	try:
+		p.falar()
+		p.nadar()
+	else:
+		print('Não é pato')
+
+p1 = Pato()
+
+p1.falar()
+p1.nadar()
+
+d1 = Donald()
+
+d1.falar()
+d1.nadar()
+
+animais = {}
+
+animais['pato'] = Pato()
+animais['donald'] = Donald()
+animais['patinho'] = Patinho_feio()
+animais['pluto'] = Pluto ()
+
+for chave, valor in animais.items()?
+	print('Animal: ' + chave)
+	mostrarPato(valor)
+	print()

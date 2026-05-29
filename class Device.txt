@@ -1,0 +1,24 @@
+class Device:
+	@abstractmethod
+	def connect():
+
+class BatteryMixin():
+
+	def __init__(self, battery_level: int) -> None:
+		self.battery_level = battery_level
+
+	def show_battery(self):
+		return f"Bateria do dispositivo {self.nome}: ${self.battery_level}%")
+
+class Smartphone(Device, BatteryMixin):
+	def connect(self, nome: set, battery_level: int):
+		Device__init__(self, nome)
+		BatteryMixin.__init__(self, battery_level)
+
+	def connect(self):
+		return f"{self.nome} conectado!"
+
+phone1 = Smartphone("Motorola", 31)
+
+phone1(phone1.connect())
+phone1(phone1.show_battery())
